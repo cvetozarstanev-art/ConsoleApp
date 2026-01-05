@@ -351,7 +351,7 @@ function renderBoard() {
 
         const cardBack = document.createElement('div');
         cardBack.classList.add('card-back');
-        cardBack.textContent = '';
+        cardBack.textContent = '🎄';
 
         const cardFace = document.createElement('div');
         cardFace.classList.add('card-face');
@@ -1131,129 +1131,6 @@ h1 {
         font-size: 1.2rem;
     }
 }
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="bg">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas memory</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Entry Menu -->
-    <div id="entry-menu" class="entry-menu">
-        <div class="menu-content">
-            <div class="snow-container">
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-                <div class="snowflake">*</div>
-            </div>
-            
-            <h1 class="menu-title">Christmas matching</h1>
-            <p class="menu-subtitle">Find all pairs!</p>
-            
-            <div class="menu-icons">
-                <span class="bounce">*</span>
-                <span class="bounce delay-1">*</span>
-                <span class="bounce delay-2">*</span>
-                <span class="bounce delay-3">*</span>
-                <span class="bounce delay-4">*</span>
-            </div>
-            
-            <div class="menu-buttons">
-                <button id="start-easy" class="menu-btn easy-btn">
-                    <span class="btn-icon">1</span>
-                    <span class="btn-text">Easy</span>
-                    <span class="btn-detail">4x4 (8 pairs)</span>
-                </button>
-                
-                <button id="start-medium" class="menu-btn medium-btn">
-                    <span class="btn-icon">2</span>
-                    <span class="btn-text">Medium</span>
-                    <span class="btn-detail">4x5 (10 pairs)</span>
-                </button>
-                
-                <button id="start-hard" class="menu-btn hard-btn">
-                    <span class="btn-icon">3</span>
-                    <span class="btn-text">Hard</span>
-                    <span class="btn-detail">6x6 (18 pairs)</span>
-                </button>
-            </div>
-            
-            <div class="music-control">
-                <button id="music-toggle" class="music-btn">Music Off</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Game Container -->
-    <div id="game-container" class="container hidden">
-        <div class="header-controls">
-            <button id="back-to-menu" class="back-btn">Back</button>
-            <h1>Koledna pamet</h1>
-            <button id="music-toggle-game" class="music-btn-small">Music Off</button>
-        </div>
-        
-        <div class="scoreboard">
-            <div class="score-item">
-                <span class="label">Moves:</span>
-                <span id="moves" class="value">0</span>
-            </div>
-            <div class="score-item">
-                <span class="label">Time:</span>
-                <span id="timer" class="value">0</span>
-                <span class="label">sec</span>
-            </div>
-            <div class="score-item">
-                <span class="label">Level:</span>
-                <span id="difficulty-display" class="value">Easy</span>
-            </div>
-        </div>
-
-        <div id="game-board" class="game-board"></div>
-
-        <button id="restart-btn" class="restart-btn">New game</button>
-
-        <div id="win-modal" class="modal hidden">
-            <div class="modal-content">
-                <h2>Bravo!</h2>
-                <p>You finished the game!</p>
-                <div class="modal-stats">
-                    <p>Level: <span id="final-difficulty" class="highlight">Easy</span></p>
-                    <p>Moves: <span id="final-moves" class="highlight">0</span></p>
-                    <p>Time: <span id="final-time" class="highlight">0</span> sec</p>
-                </div>
-                <div class="modal-buttons">
-                    <button id="modal-restart-btn" class="modal-btn">Play again</button>
-                    <button id="modal-menu-btn" class="modal-btn secondary">Menu</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="music-generator.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
-
-
-
-
-
 
 using System.Net;
 using System.Text;
